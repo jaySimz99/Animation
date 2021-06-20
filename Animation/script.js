@@ -31,9 +31,7 @@ function animate() {
         currentFrame = (currentFrame + 1) % frames;
         initial = current;
     }
-    context.drawImage(sprite, (sprite.width / 6) * currentFrame, 0, 600, 600, 0, 0, 600, 600)
-    context.rotate(0.9, 1);
-    context.drawImage(image, 0, 0);
+    context.drawImage(sprite, (sprite.width / 6) * currentFrame, 0, 600, 600, 0, 0, 600, 600);
 }
 
 function gameloop() {
